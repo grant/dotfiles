@@ -28,7 +28,12 @@ alias pull='git pull'
 alias push='git push'
 alias gc='git commit -m $1'
 alias ga='git add -A'
-function gg () { ga && echo 'Commit message (Remember to add quotes):' && read m && gc $m && push; }
+# Adds all and commits (gg 'Commit message')
+function gg () {
+  git add -A;
+  git commit -m "$1";
+  git push;
+}
 alias gs='git status'
 alias gd='git diff --color'
 alias gdc='git diff --cached'
