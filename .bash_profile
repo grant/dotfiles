@@ -26,8 +26,9 @@ alias preview="open -a 'Preview'"
 alias g='git'
 alias pull='git pull'
 alias push='git push'
-alias gc='git commit -m'
+alias gc='git commit -m $1'
 alias ga='git add -A'
+function gg () { ga && echo 'Commit message (Remember to add quotes):' && read m && gc $m && push; }
 alias gs='git status'
 alias gd='git diff --color'
 alias gdc='git diff --cached'
@@ -42,7 +43,7 @@ alias his='history | grep $1'
 alias cwd='printf "%q\n" "$(pwd)" | pbcopy'
 
 # Get the number of lines of a certain filetype in the current working directory
-alias lines="find . -name '*.$1' | xargs wc -l"
+function lines () { find . -name "*.$1" | xargs wc -l; }
 
 
 ### Help
