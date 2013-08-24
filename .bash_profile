@@ -47,4 +47,4 @@ function lines () { find . -name "*.$1" | xargs wc -l; }
 
 
 ### Help
-alias h="echo 'c .. ... l m st preview g pull push gc ga gs gd gdc gstat his cwd lines'"
+alias h="echo 'c .. ... l m st preview g pull push gc ga gg gs gd gdc gstat his cwd lines'"
