@@ -13,6 +13,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias l='ls -al'
+alias sl='ls'
 
 # Makes a directory and goes to it
 function m () { mkdir -p "$@" && eval cd "\"\$$#\""; }
@@ -28,7 +29,8 @@ alias push='git push'
 alias gc='git commit -m'
 alias ga='git add -A'
 alias gs='git status'
-alias gd='git diff --colored'
+alias gd='git diff --color'
+alias gdc='git diff --cached'
 alias gstat='git diff --stat'
 
 # Other
@@ -43,11 +45,5 @@ alias cwd='printf "%q\n" "$(pwd)" | pbcopy'
 alias lines="find . -name '*.$1' | xargs wc -l"
 
 
-
-
-
-
-
-
-# Help
-alias h="echo 'c .. ... l m st preview g pull push gc ga gs gd gstat his cwd lines'"
+### Help
+alias h="echo 'c .. ... l m st preview g pull push gc ga gs gd gdc gstat his cwd lines'"
