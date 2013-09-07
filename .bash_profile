@@ -11,6 +11,7 @@ PATH=$PATH:/usr/local/share/npm/bin/
 alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ~='cd ~'
 
 alias l='ls -al'
 alias sl='ls'
@@ -52,4 +53,4 @@ function lines () { find . -name "*.$1" | xargs wc -l; }
 
 
 ### Help
-alias h="echo 'c .. ... l m st preview g pull push gc ga gg gs gd gdc gstat his cwd lines'"
+alias h="echo 'c ~ .. ... l m st preview g pull push gc ga gg gs gd gdc gstat his cwd lines'"
