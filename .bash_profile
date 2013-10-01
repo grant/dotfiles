@@ -8,6 +8,8 @@ PATH=$PATH:/usr/local/share/npm/bin/
 
 ### Shortcuts
 
+alias p='pwd'
+
 alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -53,4 +55,4 @@ function lines () { find . -name "*.$1" | xargs wc -l; }
 
 
 ### Help
-alias h="echo 'c ~ .. ... l m st preview g pull push gc ga gg gs gd gdc gstat his cwd lines'"
+alias h="echo 'p c ~ .. ... l m st preview g pull push gc ga gg gs gd gdc gstat his cwd lines'"
