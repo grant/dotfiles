@@ -24,7 +24,7 @@ function m () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 alias st="open -a 'Sublime Text 2'"
 alias preview="open -a 'Preview'"
 
-alias size="du -sh ."
+alias s="du -sh ."
 
 # Git
 
@@ -57,4 +57,4 @@ function lines () { find . -name "*.$1" | xargs wc -l; }
 
 
 ### Help
-alias h="echo 'p c ~ .. ... l m st preview size g pull push gc ga gg gs gd gdc gstat his cwd lines'"
+alias h="echo 'p c ~ .. ... l m st preview sz g pull push gc ga gg gs gd gdc gstat his cwd lines'"
