@@ -8,11 +8,15 @@ PATH=$PATH:/usr/local/share/npm/bin/
 
 ### Shortcuts
 
+alias s='python -m SimpleHTTPServer'
+alias attu='ssh gctimmer@attu.cs.washington.edu'
+
 alias p='pwd'
 
 alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias ~='cd ~'
 
 alias l='ls -al'
@@ -24,20 +28,20 @@ function m () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 alias st="open -a 'Sublime Text 2'"
 alias preview="open -a 'Preview'"
 
-alias s="du -sh ."
+alias z="du -sh ."
 
 # Git
 
 alias g='git'
-alias pull='git pull'
-alias push='git push'
+alias pull='git pull origin master'
+alias push='git push origin master'
 alias gc='git commit -m $1'
 alias ga='git add -A'
 # Adds all and commits (gg 'Commit message')
 function gg () {
   git add -A;
   git commit -m "$1";
-  git push;
+  git push origin master;
 }
 alias gs='git status'
 alias gd='git diff --color'
