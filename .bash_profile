@@ -59,6 +59,8 @@ alias cwd='printf "%q\n" "$(pwd)" | pbcopy'
 # Get the number of lines of a certain filetype in the current working directory
 function lines () { find . -name "*.$1" | xargs wc -l; }
 
+alias chrome='open /Applications/Google\ Chrome.app'
+alias canary='open /Applications/Google\ Chrome\ Canary.app'
 
 ### Help
 alias h="echo 'p c ~ .. ... l m st preview sz g pull push gc ga gg gs gd gdc gstat his cwd lines'"
