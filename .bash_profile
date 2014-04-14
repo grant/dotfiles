@@ -37,6 +37,7 @@ alias pull='git pull origin master'
 alias push='git push origin master'
 alias gc='git commit -m $1'
 alias ga='git add -A'
+alias clone='git clone'
 # Adds all and commits (gg 'Commit message')
 function gg () {
   git add -A;
@@ -47,6 +48,7 @@ alias gs='git status'
 alias gd='git diff --color'
 alias gdc='git diff --cached'
 alias gstat='git diff --stat'
+alias log='git log --all --graph --decorate --oneline --abbrev-commit'
 
 # Other
 
