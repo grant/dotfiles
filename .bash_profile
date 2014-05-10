@@ -44,6 +44,17 @@ function gg () {
   git commit -m "$1";
   git push origin master;
 }
+# Create gh pages
+function gh () {
+  git checkout --orphan gh-pages;
+}
+# Pushes to gh pages
+function ghpush () {
+  git checkout gh-pages;
+  git rebase master;
+  git push origin gh-pages;
+  git checkout master;
+}
 alias gs='git status'
 alias gd='git diff --color'
 alias gdc='git diff --cached'
