@@ -33,8 +33,8 @@ alias z="du -sh ."
 # Git
 
 alias g='git'
-alias pull='git pull origin master'
-alias push='git push origin master'
+alias pull='git pull'
+alias push='git push'
 alias gc='git commit -m $1'
 alias ga='git add -A'
 alias clone='git clone'
@@ -42,7 +42,7 @@ alias clone='git clone'
 function gg () {
   git add -A;
   git commit -m "$1";
-  git push origin master;
+  git push;
 }
 # Create gh pages
 function gh () {
