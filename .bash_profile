@@ -5,6 +5,7 @@ export PS1="\e[0;31m\]\u\[\e[m\]:\[\e[0;37m\]\W\[\e[m\]$ "
 
 # To make Grunt work
 PATH=$PATH:/usr/local/share/npm/bin/
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 ### Shortcuts
 
