@@ -1,9 +1,21 @@
+# Git Prompt
+source ~/.git-prompt.sh
+
 # Coloring bash
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PS1="\e[0;31m\]\u\[\e[m\]:\[\e[0;37m\]\W\[\e[m\]$ "
+export PS1='\[\033[38;5;9m\]\u\[\033[38;5;15m\] @ \[\033[38;5;10m\]$(__git_ps1 "⎇ (%s) ")\[\033[38;5;14m\]\w\[\033[38;5;9m\]\n❤ \[$(tput sgr0)\]'
 
+### Added by the Heroku Toolbelt and other things
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/smlnj/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+### GOLANG
+export GOPATH=/Users/granttimmerman/Documents/go
+export PATH=$PATH:$GOPATH/bin
 
 ### Shortcuts
 
@@ -28,6 +40,17 @@ alias st="open -a 'Sublime Text 2'"
 alias preview="open -a 'Preview'"
 
 alias z="du -sh ."
+
+# History
+
+export HISTFILESIZE=20000
+export HISTSIZE=10000
+shopt -s histappend
+# Combine multiline commands into one in history
+shopt -s cmdhist
+# Ignore duplicates, ls without options and builtin commands
+HISTCONTROL=ignoredups
+export HISTIGNORE="&:ls:[bf]g:exit"
 
 # Git
 
@@ -62,6 +85,8 @@ alias log='git log --all --graph --decorate --oneline --abbrev-commit'
 
 # Other
 
+alias gf='gofmt -s -w .'
+
 # Search history for term
 alias his='history | grep $1'
 
@@ -76,5 +101,10 @@ alias canary='open /Applications/Google\ Chrome\ Canary.app'
 
 ### Help
 alias h="echo 'p c ~ .. ... l m st preview sz g pull push gc ga gg gs gd gdc gstat his cwd lines'"
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR="/Users/granttimmerman/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -s "/Users/granttimmerman/.gvm/scripts/gvm" ]] && source "/Users/granttimmerman/.gvm/scripts/gvm"
+export GOPATH=$HOME/Documents/go
+export PATH=$PATH:$GOPATH/Documents/bin
