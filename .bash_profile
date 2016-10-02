@@ -85,6 +85,26 @@ alias log='git log --all --graph --decorate --oneline --abbrev-commit'
 
 # Other
 
+
+# Create a new directory and enter it
+function md() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# find shorthand
+function f() {
+  find . -name "$1" 2>&1 | grep -v 'Permission denied'
+}
+
+# Start an HTTP server from a directory, optionally specifying the port
+function server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/" &
+  # statik is good because it won't expose hidden folders/files by default.
+  # npm install -g statik
+  statik --port "$port" .
+}
+
 alias gf='gofmt -s -w .'
 
 # Search history for term
