@@ -36,7 +36,7 @@ alias sl='ls'
 # Makes a directory and goes to it
 function m () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-alias st="open -a 'Sublime Text 2'"
+alias st="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl "
 alias preview="open -a 'Preview'"
 
 alias z="du -sh ."
