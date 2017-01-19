@@ -5,16 +5,18 @@ source ~/.git-prompt.sh
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PS1='\[\033[38;5;9m\]\u\[\033[38;5;15m\] @ \[\033[38;5;10m\]$(__git_ps1 "⎇ (%s) ")\[\033[38;5;14m\]\w\[\033[38;5;9m\]\n❤ \[$(tput sgr0)\]'
+# vv found on stack overflow to fix coloring vv
+export TERM=xterm-256color
 
 ### Added by the Heroku Toolbelt and other things
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/smlnj/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 ### GOLANG
-export GOPATH=/Users/granttimmerman/Documents/go
+export GOPATH=/Users/granttimmerman/Documents/github
 export PATH=$PATH:$GOPATH/bin
 
 ### Shortcuts
