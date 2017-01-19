@@ -79,7 +79,7 @@ function ghpush () {
   git push origin gh-pages;
   git checkout master;
 }
-alias gs='git status'
+alias gs='git status -sb'
 alias gd='git diff --color'
 alias gdc='git diff --cached'
 alias gstat='git diff --stat'
