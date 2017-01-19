@@ -84,6 +84,7 @@ alias gd='git diff --color'
 alias gdc='git diff --cached'
 alias gstat='git diff --stat'
 alias log='git log --all --graph --decorate --oneline --abbrev-commit'
+git config --global help.autocorrect 1
 
 # Other
 
