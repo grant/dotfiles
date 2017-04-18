@@ -1,3 +1,9 @@
+# LINUX SETTINGS (not needed for mac)
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+# END LINUX SETTINGS
+
+
 # Git Prompt
 source ~/.git-prompt.sh
 
