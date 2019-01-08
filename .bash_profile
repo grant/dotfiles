@@ -63,7 +63,7 @@ export HISTIGNORE="&:ls:[bf]g:exit"
 # Git
 
 alias g='git'
-alias pull='git pull'
+alias pull='git pull --all'
 alias push='git push'
 alias gc='git commit -m $1'
 alias ga='git add -A'
