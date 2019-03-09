@@ -27,7 +27,7 @@ export PATH=$PATH:$GOPATH/bin
 
 ### Shortcuts
 
-alias s='python -m SimpleHTTPServer'
+alias ss='python -m SimpleHTTPServer'
 alias attu='ssh gctimmer@attu.cs.washington.edu'
 
 alias p='pwd'
