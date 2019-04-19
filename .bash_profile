@@ -3,6 +3,8 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 # END LINUX SETTINGS
 
+# Google Cloud
+alias cs='gcloud alpha cloud-shell ssh'
 
 # Git Prompt
 source ~/.git-prompt.sh
