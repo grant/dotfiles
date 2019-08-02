@@ -7,6 +7,8 @@ curl https://raw.githubusercontent.com/grant/dotfiles/master/.bash_profile > ~/.
 curl https://raw.githubusercontent.com/grant/dotfiles/master/.git-branch.sh > ~/.git-branch.sh
 curl https://raw.githubusercontent.com/grant/dotfiles/master/.git-prompt.sh > ~/.git-prompt.sh
 
+sleep 1 # wait for download
+
 source ~/.bash_profile
 source ~/.git-branch.sh
 source ~/.git-prompt.sh
