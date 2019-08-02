@@ -9,6 +9,8 @@ curl https://raw.githubusercontent.com/grant/dotfiles/master/.git-prompt.sh > ~/
 
 sleep 10 # wait for download
 
-source ~/.bash_profile
-source ~/.git-branch.sh
-source ~/.git-prompt.sh
+(
+  source ~/.bash_profile &&
+  source ~/.git-branch.sh &&
+  source ~/.git-prompt.sh
+)
