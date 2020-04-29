@@ -67,7 +67,7 @@ export HISTIGNORE="&:ls:[bf]g:exit"
 alias g='git'
 alias pull='git pull --all'
 alias push='git push'
-alias gc='git commit -m $1'
+alias gc='git commit -s -m $1'
 alias ga='git add -A'
 alias clone='git clone'
 # Adds all and commits (gg 'Commit message')
