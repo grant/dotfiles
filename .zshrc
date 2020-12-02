@@ -96,6 +96,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 
 # GOOGLE
 alias sfo='ssh timmerman@timmerman.sfo.corp.google.com'
+alias ctop='ssh timmerman.c.googlers.com'
 # glogin / prodaccess
 
 alias ss='python -m SimpleHTTPServer'
