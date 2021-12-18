@@ -86,6 +86,9 @@ prompt_context() {
   fi
 }
 
+# Disable .DS_Store files
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 # Legacy .bash_profile
 
 export PATH=$PATH:/usr/local/git/bin:/usr/local/bin
