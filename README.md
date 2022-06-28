@@ -8,6 +8,8 @@ Log into any terminal and run this command to set things up:
 
 Copy these files in your home directory.
 
+Setup oh my zsh: https://ohmyz.sh/#install
+
 ## Global commands
 
 - [hicat](https://www.npmjs.com/package/hicat)
