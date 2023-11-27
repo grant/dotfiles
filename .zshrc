@@ -166,9 +166,7 @@ alias canary='open /Applications/Google\ Chrome\ Canary.app'
 export PATH="/Users/timmerman/.deno/bin:$PATH"
 export GOPATH=$HOME/bin/go
 export PATH=$PATH:$GOPATH/bin
-export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$/Users/timmerman/.rvm/gems/ruby-2.3.3/bin:$PATH"
-eval "$(rbenv init -)"
 export PATH="$HOME/.cargo/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export PATH="/usr/local/opt/ruby/bin:$PATH"
