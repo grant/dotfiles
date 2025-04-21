@@ -141,6 +141,7 @@ function gg () {
   git commit -m "$1";
   git push;
 }
+alias switch='git switch'
 
 # Other
 
@@ -149,8 +150,6 @@ function md() { mkdir -p "$@" && cd "$@" }
 
 ## Find shorthand
 function f() { find . -name "$1" 2>&1 | grep -v 'Permission denied' }
-
-alias gf='gofmt -s -w .'
 
 ## Search history for term
 alias his='history | grep $1'
