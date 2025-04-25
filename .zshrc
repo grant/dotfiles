@@ -126,6 +126,7 @@ export HISTIGNORE="&:ls:[bf]g:exit"
 # Git
 git config --global help.autocorrect 1
 git config --global pull.rebase true
+git config --global merge.conflictstyle diff3
 alias switch='git switch'
 alias pull='git pull'
 alias push='git push'
