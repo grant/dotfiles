@@ -86,6 +86,16 @@ prompt_context() {
   fi
 }
 
+# Enable async mode to fix terminal hangs
+ZSH_AUTOSUGGEST_USE_ASYNC=true
+
+# https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Optional: Clear widgets that may conflict with arrow key bindings
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS=(up-line-or-history down-line-or-history history-search-backward history-search-forward)
+
 # Disable .DS_Store files
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
